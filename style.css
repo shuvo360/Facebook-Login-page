@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+form {
+  width: 400px;
+  height: 344px;
+  background: #fff;
+  border: none;
+  padding: 6px 0px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.input_area {
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+  position: relative;
+}
+.input_group input {
+  width: 364px;
+  font-size: 17px;
+  padding: 14px 16px;
+  outline: none;
+  color: #1d2129;
+  border: 1px solid #ddefe2;
+  border-radius: 6px;
+}
+
+.input_group input::placeholder {
+  color: #9e949c;
+}
+
+.input_group input:focus {
+  border-color: #1b74e4;
+  box-shadow: 0 0 0 2px #e7f3ff;
+  caret-color: #1b74e4;
+}
+
+.input_group input:focus::placeholder {
+  color: #d1ced5;
+}
+.visibility {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  cursor: pointer;
+}
+.visibility:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0 0;
+}
+.btn button {
+  width: 364px;
+  color: #fff;
+  background: #1877f2;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 48px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.btn button:active {
+  background: #4267b2;
+}
+
+.forgot {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forgot a {
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.forgot a:hover {
+  text-decoration: underline;
+}
+.line {
+  align-items: center;
+  border-radius: 5px solid #000000;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+}
+.newAccount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0px;
+}
+
+.newAccount a {
+  width: 210px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #fff;
+  background: #42b72a;
+}
+.newAccount a:active {
+  background: #2b9217;
+}

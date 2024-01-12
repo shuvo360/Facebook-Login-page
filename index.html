@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form autocomplete="off">
+      <div class="input_area">
+        <div class="input_group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Eamil or Phone number"
+          />
+        </div>
+        <div class="input_group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            style="padding-right: 45px"
+            oninput="checkPassword()"
+          />
+          <div class="visibility" onclick="togglePasswordVisibility()">
+            <img src="assets/visibility-off.svg" alt="Hidden" id="eyeIcon" />
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <button>Enter</button>
+      </div>
+      <div class="forgot">
+        <a href="#">Forgot your password?</a>
+      </div>
+      <div class="line"></div>
+      <div class="newAccount">
+        <a role="button" href="#">Create a new account</a>
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
